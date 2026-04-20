@@ -14,7 +14,7 @@ TABLE_NAME = "Movies"
 
 def get_table():
     """Return a reference to the DynamoDB Movies table."""
-    dynamodb = boto3.resource("dynamodb", region_name=REGION)
+    dynamodb = boto3.resource('dynamodb', region_name='us-east-2')
     return dynamodb.Table(TABLE_NAME)
 
 
